@@ -26,19 +26,19 @@ driver.find_element_by_xpath("//*[@id='SubmitCreate']/span").click()
 
 driver.find_element_by_id("uniform-id_gender2").click()
 
-driver.find_element_by_id("customer_firstname").send_keys('apsar')
+driver.find_element_by_id("customer_firstname").send_keys("apsar")
 
-driver.find_element_by_id("customer_lastname").send_keys('jaha')
+driver.find_element_by_id("customer_lastname").send_keys("jaha")
 
-driver.find_element_by_id("email").send_keys('mdapsarjaha@gmail.com')
+driver.find_element_by_id("email").send_keys("mdapsarjaha@gmail.com")
 
-driver.find_element_by_id("passwd").send_keys('apsar123')
+driver.find_element_by_id("passwd").send_keys("apsar123")
 
 #driver.find_element_by_id("days").send_keys('15')
 
-driver.find_element_by_xpath("//*[@id='days']").click()
+driver.find_element_by_xpath("//*[@id='days']/option[16]").click() 
 
-driver.find_element_by_xpath("//*[@id='months']").click()
+driver.find_element_by_xpath("//*[@id='years']/option[26]").click()
 
 driver.find_element_by_xpath("//*[@id='years']").click()
 
@@ -54,7 +54,7 @@ driver.find_element_by_id('address2').send_keys('1st floor')
 
 driver.find_element_by_id('city').send_keys('hyderbad')
 
-driver.find_element_by_xpath("//*[@id='id_state']").click()
+driver.find_element_by_xpath("//*[@id='id_state']/option[16]").click()
 
 driver.find_element_by_id('postcode').send_keys('00000')
 
