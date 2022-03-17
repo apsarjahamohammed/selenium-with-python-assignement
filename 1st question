@@ -42,41 +42,31 @@ driver.find_element_by_xpath("//*[@id='years']/option[26]").click()
 
 driver.find_element_by_xpath("//*[@id='years']").click()
 
-driver.find_element_by_id('firstname').send_keys('apsar')
+driver.find_element_by_id('firstname').send_keys("apsar")
 
-driver.find_element_by_id('lastname').send_keys('jaha')
+driver.find_element_by_id('lastname').send_keys("jaha")
 
-driver.find_element_by_id('company').send_keys('LTTS')
+driver.find_element_by_id('company').send_keys("LTTS")
 
-driver.find_element_by_id('address1').send_keys('gandhinagar')
+driver.find_element_by_id('address1').send_keys("gandhinagar")
 
-driver.find_element_by_id('address2').send_keys('1st floor')
+driver.find_element_by_id('address2').send_keys("1st floor")
 
-driver.find_element_by_id('city').send_keys('hyderbad')
+driver.find_element_by_id('city').send_keys("hyderbad")
 
 driver.find_element_by_xpath("//*[@id='id_state']/option[16]").click()
 
-driver.find_element_by_id('postcode').send_keys('00000')
+driver.find_element_by_id('postcode').send_keys("00000")
 
 driver.find_element_by_id('uniform-id_country').click()
 
 driver.find_element_by_id('other').click()
 
-driver.find_element_by_id('phone').send_keys('123456')
+driver.find_element_by_id('phone').send_keys("9030788644")
 
-driver.find_element_by_id('phone_mobile').send_keys('1234567890')
+driver.find_element_by_id('phone_mobile').send_keys("9030788644")
 
-driver.find_element_by_id('alias').send_keys('xyz')
+driver.find_element_by_id('alias').send_keys("xyz")
 
 driver.find_element_by_id('submitAccount').click()
-
-
-
-
-
-
-
-
-
-
 
