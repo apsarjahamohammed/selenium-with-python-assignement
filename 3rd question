@@ -1,0 +1,31 @@
+from ctypes.wintypes import MSG
+import time
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+
+driver = webdriver.Chrome(executable_path = "C:\\Users\\Ansar Jaha\\Desktop\\M.Tech\\INTERNSHIP\\chromedriver.exe")
+MSG = driver.find_element_by_class_name("alert.alert-danger")
+driver.get("http://http://automationpractice.com/index.php")
+
+time.sleep(5)
+
+driver.find_element_by_class_name("login").click()
+time.sleep(5)
+
+driver.find_element_by_id("email_create").send_keys("mdapsarjaha@gmail.com")
+time.sleep(5)
+
+driver.find_element_by_xpath("//*[@id='SubmitCreate']/span").click()
+
+#driver.find_element_by_xpath("//*[@id='center_column'/div/ol/li[1]")   #phone number
+#driver.find_element_by_xpath("//*[@id='center_column']/div/ol/li[2]") # last name
+#driver.find_element_by_xpath("//*[@id='center_column']/div/ol/li[3]")  #first name
+#driver.find_element_by_xpath("//*[@id='center_column']/div/ol/li[4]")   #password
+#driver.find_element_by_xpath("//*[@id='center_column']/div/ol/li[5]")   #address1
+#driver.find_element_by_xpath("//*[@id='center_column']/div/ol/li[6]")   #city
+#driver.find_element_by_xpath("//*[@id='center_column']/div/ol/li[7]")   #The Zip/Postal code you've entered is invalid. It must follow this format: 00000
+#driver.find_element_by_xpath("//*[@id='center_column']/div/ol/li[8]")   #country
+
+driver.find_element_by_id('submitAccount').click()
+
+
