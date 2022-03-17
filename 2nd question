@@ -1,0 +1,25 @@
+import time
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+
+driver = webdriver.Chrome(executable_path = "C:\\Users\\Ansar Jaha\\Desktop\\M.Tech\\INTERNSHIP\\chromedriver.exe")
+
+driver.get("http://http://automationpractice.com/index.php")
+time.sleep(5)
+
+driver.find_element_by_class_name("login").click()
+time.sleep(5)
+
+driver.find_element_by_id("email_create").send_keys("abcdefgmail.com")
+
+driver.find_element_by_xpath("//*[@id='SubmitCreate']/span").click()
+
+driver.find_element_by_xpath("//*[@id='create_account_error''/ol/li").click()
+
+#driver.find_element_by_id_element("email").send_keys("abcdef@gmail.com")
+
+#driver.find_element_by_xpath("//*[@id='center_column']/div[1]").click()
+
+
+
+
